@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "538338843",
+    "project_id": "study-app-43ddd",
+    "storage_bucket": "study-app-43ddd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538338843:android:d7a7f6ba7dd12d844fbabe",
+        "android_client_info": {
+          "package_name": "com.elektryo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5IiVRPYbtn5_SNzcxT61onYZ9BRqNsVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
