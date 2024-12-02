@@ -11,16 +11,13 @@ import 'package:flutter_study_app/screens/splash/splash_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter_study_app/data_uploader_screen.dart';
 
-/*Future<void> main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(GetMaterialApp(home: DataUploaderScreen()));
-}*/
-
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   InitialBindings().dependencies();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

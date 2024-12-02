@@ -20,23 +20,26 @@ class AppIntroductionScreen extends StatelessWidget {
             const Icon(Icons.star, size: 65),
             const SizedBox(height: 40),
             const Text(
-              'This is a study app, in the future it will grow into a wonderful educational app, special thanks to dbestech, best regards Sabohano',
+              'تطبيق بيان لتعليم النحو العربي\nمحتوي: أ.اسلام صبيح\nتطوير التطبيق: احمد صبيح',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontSize: 18,
-                  color: onSurfaceTextColor,
-                  fontWeight: FontWeight.bold),
+                fontSize: 18,
+                color: onSurfaceTextColor,
+                fontWeight: FontWeight.bold,
+                height: 1.5, // Line height spacing
+                fontFamily:
+                    'Amiri', // Optional: Add an Arabic font for better appearance
+              ),
             ),
             const SizedBox(
               height: 40,
             ),
             AppCircleButton(
-              onTap: () {},
-              child: const Icon(
-                Icons.arrow_forward,
-                size: 35,
-              ),
-            )
+                onTap: () {
+                  print("button clicked");
+                  Get.offAndToNamed("/home");
+                },
+                child: const Icon(Icons.arrow_forward, size: 35))
           ],
         ),
       ),
